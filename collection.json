@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "b8ff43c7-cad5-441b-aa8a-44f1207ee672",
+		"name": "bancobase-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7847858"
+	},
+	"item": [
+		{
+			"name": "create new payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"concept\":\"concept\", \n    \"productQuantity\":1,\n    \"payer\":\"payer\",\n    \"recipient\":\"recipient\",\n    \"totalAmount\":100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payments-service/api/v1/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments-service",
+						"api",
+						"v1",
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update payment status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"6838c8d1e8e5b549ea68a5cd\", \n    \"newStatus\":\"COMPLETED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/payments-service/api/v1/payments/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments-service",
+						"api",
+						"v1",
+						"payments",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get payment details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/payments-service/api/v1/payments/6838b150800ee15d36ea00c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments-service",
+						"api",
+						"v1",
+						"payments",
+						"6838b150800ee15d36ea00c0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
