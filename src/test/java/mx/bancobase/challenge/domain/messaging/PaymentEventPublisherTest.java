@@ -2,8 +2,6 @@ package mx.bancobase.challenge.domain.messaging;
 
 import mx.bancobase.challenge.domain.entity.Payment;
 import mx.bancobase.challenge.domain.enums.PaymentStatus;
-import mx.bancobase.challenge.domain.messaging.PaymentEventPublisher;
-import mx.bancobase.challenge.domain.messaging.PaymentStatusChangedEvent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;

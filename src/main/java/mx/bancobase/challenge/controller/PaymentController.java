@@ -6,7 +6,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import mx.bancobase.challenge.domain.dto.CreatePaymentRequestDto;
 import mx.bancobase.challenge.domain.dto.PaymentResponseDto;
 import mx.bancobase.challenge.domain.dto.UpdatePaymentStatusRequestDto;

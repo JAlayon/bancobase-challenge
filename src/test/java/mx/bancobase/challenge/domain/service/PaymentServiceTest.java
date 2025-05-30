@@ -5,7 +5,6 @@ import mx.bancobase.challenge.domain.entity.Payment;
 import mx.bancobase.challenge.domain.enums.PaymentStatus;
 import mx.bancobase.challenge.domain.messaging.PaymentEventPublisher;
 import mx.bancobase.challenge.domain.repository.PaymentRepository;
-import mx.bancobase.challenge.domain.service.PaymentService;
 import mx.bancobase.challenge.mapper.PaymentMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
