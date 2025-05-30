@@ -1,4 +1,4 @@
-package mx.bancobase.challenge.messaging;
+package mx.bancobase.challenge.domain.messaging;
 
 import mx.bancobase.challenge.domain.entity.Payment;
 import mx.bancobase.challenge.domain.enums.PaymentStatus;
@@ -28,7 +28,6 @@ class PaymentEventPublisherTest {
     void setUp() {
         rabbitTemplate = mock(RabbitTemplate.class);
 
-        // We create a concrete instance and inject field values using reflection (or use @TestConfiguration)
         publisher = new PaymentEventPublisher(rabbitTemplate);
         setField(publisher, "exchange", exchange);
         setField(publisher, "routingKey", routingKey);

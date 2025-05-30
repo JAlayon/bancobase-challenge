@@ -1,4 +1,4 @@
-package mx.bancobase.challenge.service;
+package mx.bancobase.challenge.domain.service;
 
 import mx.bancobase.challenge.domain.dto.CreatePaymentRequestDto;
 import mx.bancobase.challenge.domain.entity.Payment;

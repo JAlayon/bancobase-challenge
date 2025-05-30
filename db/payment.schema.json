@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Payment",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the payment"
+    },
+    "concept": {
+      "type": "string"
+    },
+    "productQuantity": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "payer": {
+      "type": "string"
+    },
+    "recipient": {
+      "type": "string"
+    },
+    "totalAmount": {
+      "type": "string",
+      "pattern": "^[0-9]+(\\.[0-9]{1,2})?$",
+      "description": "Decimal number as string for BigDecimal compatibility"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING", "PAID", "FAILED", "CANCELLED"]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "concept",
+    "productQuantity",
+    "payer",
+    "recipient",
+    "totalAmount",
+    "status",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}
